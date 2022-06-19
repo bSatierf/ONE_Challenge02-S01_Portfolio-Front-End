@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@200&family=Neonderthaw&family=Satisfy&family=Tourney:ital,wght@1,100&family=Vibur&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Sacramento&family=Yellowtail&display=swap');
+
+:root {
+  --bkg-color: #F5F5F5;
+  --link-color: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: var(--bkg-color);
+  line-height: 1;
+}
+
+
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 120px 0 120px;
+  padding: 15px 0;
+  border: 1px solid yellow;
+}
+
+.cabecalho__logo {
+  font-family: Yellowtail;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: royalblue;
+  /* border: 1px solid yellow; */
+}
+
+.cabecalho__link {
+  /* border: 1px solid green; */
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  /* background-color: royalblue; */
+  margin: 10px 120px 0 120px;
+  border: 1px solid red;
+  padding-bottom: 1em;
+}
+
+.title__div {
+  /* border: 1px solid yellow; */
+  display: flex;
+}
+
+.title__foto {
+  order: 1;
+  width: 368px;
+  height: 368px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  margin: auto 2em auto 0;
+  padding: 1em 0;
+}
+
+.title__bio {
+  font-size: 3.25em;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+.title__subsection {
+  padding: 30px 0;
+  font-size: 1.37em;
+  font-weight: 400;
+  color: rgba(70, 70, 70, 1);
+}
+
+.title__social {
+  display: flex;
+  padding-top: 1.87em;
+  justify-content: flex-start;
+}
+
+.title__social__item {
+  padding: 0 3em 0 0;
+}
+
+/* about */
+
+.sobre {
+  width: 100vw;
+  border: 1px solid red;
+  padding: 3.75em 0;
+  display: flex;
+}
+
+.sobre__container {
+  margin: 0 7.5em;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre__title {
+  font-size: 3em;
+  font-weight: 700;
+  /* border: 1px solid blue; */
+}
+
+.sobre__paragrafo {
+  padding: 1em 0;
+  font-size: 1em;
+  font-weight: 400;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+
+
