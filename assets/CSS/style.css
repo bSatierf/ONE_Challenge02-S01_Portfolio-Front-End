@@ -27,8 +27,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 120px 0 120px;
-  padding: 15px 0;
+  margin: .93em 3.75em 0 3.75em;
+  padding: .93em 0;
   border: 1px solid yellow;
 }
 
@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: royalblue; */
-  margin: 10px 120px 0 120px;
+  margin: .625em 3.75em 0 3.75em;
   border: 1px solid red;
   padding-bottom: 1em;
 }
@@ -62,8 +62,8 @@ body {
 
 .title__foto {
   order: 1;
-  width: 368px;
-  height: 368px;
+  width: 23em;
+  height: 23em;
   border: 1px solid black;
   border-radius: 50%;
 }
@@ -73,16 +73,17 @@ body {
   flex-direction: column;
   margin: auto 2em auto 0;
   padding: 1em 0;
+  border: 1px solid black;
 }
 
 .title__bio {
   font-size: 3.25em;
   font-weight: 700;
-  padding-right: 50px;
+  padding-right: 3.12em;
 }
 
 .title__subsection {
-  padding: 30px 0;
+  padding: 1.87em 0;
   font-size: 1.37em;
   font-weight: 400;
   color: rgba(70, 70, 70, 1);
@@ -124,8 +125,11 @@ body {
   padding: 1em 0;
   font-size: 1em;
   font-weight: 400;
-  flex-grow: 4;
-  flex-wrap: wrap;
+  width: 70%;
 }
+
+/* Skills */
+
+
 
 
