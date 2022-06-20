@@ -14,6 +14,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  list-style: none;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: .93em 3.75em 0 3.75em;
+  margin: .93em 7.5em 0 7.5em;
   padding: .93em 0;
   border: 1px solid yellow;
 }
@@ -50,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: royalblue; */
-  margin: .625em 3.75em 0 3.75em;
+  margin: .625em 7.5em 0 7.5em;
   border: 1px solid red;
   padding-bottom: 1em;
 }
@@ -103,14 +104,14 @@ body {
 
 .sobre {
   width: 100vw;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 3.75em 0;
   display: flex;
 }
 
 .sobre__container {
   margin: 0 7.5em;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
 }
@@ -131,5 +132,82 @@ body {
 /* Skills */
 
 
+.habilidades {
+  width: 100vw;
+  border: 1px solid red;
+}
 
+.habilidades__title {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 1.25em;
+}
 
+.habilidades__line {
+  margin: 0 7.5em;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+
+.habilidades__box {
+  border: 1px solid green;
+  width: 176px;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.habilidades__img {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+.habilidades__name {
+  padding: .5em 1em;
+  text-align: center;
+}
+
+.hobbies {
+  width: 100vw;
+  border: 1px solid red;
+}
+
+.hobbies__title {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 1.25em;
+}
+
+.hobbies__line {
+  margin: 0 7.5em;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+
+.hobbies__box {
+  border: 1px solid green;
+  width: 176px;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hobbies__img {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+.hobbies__name {
+  padding: .5em 1em;
+  text-align: center;
+}
