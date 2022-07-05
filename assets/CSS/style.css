@@ -2,27 +2,38 @@
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@200&family=Neonderthaw&family=Satisfy&family=Tourney:ital,wght@1,100&family=Vibur&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Sacramento&family=Yellowtail&display=swap');
+
+:root {
+  /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #F5F5F5;
+  --cor-de-link: #000;
+  --cor-fundo-azul: #EAF2FD;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: 'Raleway';
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
-ol, ul,li {
-    list-style: none;
+
+ol,
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
+
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -40,51 +51,109 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+section.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 9.56em;
+  padding: .93em 0;
+  height: 10vh;
+  border: 1px solid yellow;
+}
+
+section header {
+  display: flex;
+  align-items: center;
+}
+
+.menu__title {
+  font-family: Yellowtail;
+  font-size: 1.5em;
+  color: royalblue;
+  padding: .5em;
+  font-weight: 700;
+}
+
+
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  font-size: 16px;
+  font-weight: 500;
+  width: 46.87em;
 
 }
+
 
 /*Sessão Title*/
 
-section.title{
-
+section.title {
+  display: flex;
+  margin: 2em 9.56em;
 }
 
+div.title__container h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+div.title__div {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.title__subsection {
+  font-size: 1.06em;
+  line-height: 1.43em;
+  width: 37.5em;
+}
+
+.title__network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-size: 1em;
+  width: 31.25em;
+}
+
+.title__network il {
+  font-style: normal;
+  font-weight: 37.5em;
+  font-size: 1em;
+  line-height: 1em;
+}
 /*Sessão About*/
 
-section.about{
-
+section.about {
+  padding: 3.87em 10.25em;
+  background-color: var(--cor-fundo-azul);
 }
 
 /*Sessão Hobbies*/
 
-section.hobbies{
-    
-}
+section.hobbies {}
 
 /* Experiência Acadêmica*/
 
-section.academic{
-
-}
+section.academic {}
 
 /* experiência*/
 
-section.experience{
-
-}
+section.experience {}
 
 /*Contato*/
 
-section.formcontato{
-
-}
+section.formcontato {}
 
 /*footeer*/
 
-section.footer{
-   
-}
+section.footer {}
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
@@ -92,39 +161,39 @@ utilize como referência os breakpoints @media abaixo*/
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menu */
+  /* Menu */
 
-/*title*/
+  /*title*/
 
-/*Skills*/
+  /*Skills*/
 
-/*Hobbies*/
+  /*Hobbies*/
 
-/*Experiências acadêmicas*/
+  /*Experiências acadêmicas*/
 
-/*Expeirência profissional*/
+  /*Expeirência profissional*/
 
 }
 
 /*Mobile*/
 @media (min-width: 425px) {
 
-/*Menu*/
+  /*Menu*/
 
-/*Titulo*/
+  /*Titulo*/
 
-/*Sessão sobre*/
+  /*Sessão sobre*/
 
-/*Skills*/
+  /*Skills*/
 
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
+  /*Hobbies*/
 
-/*Experiência Profissional*/
+  /*Formação Acadêmica*/
 
- /*Contato*/
+  /*Experiência Profissional*/
 
-/*Footer*/
+  /*Contato*/
+
+  /*Footer*/
 
 }
