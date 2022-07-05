@@ -122,7 +122,7 @@ div.title__div {
   width: 31.25em;
 }
 
-.title__network il {
+.title__network li {
   font-style: normal;
   font-weight: 37.5em;
   font-size: 1em;
@@ -135,9 +135,120 @@ section.about {
   background-color: var(--cor-fundo-azul);
 }
 
+
+/* Sessão Skills */
+
+section.skills {
+  margin: 0 9.56em;
+  border: 1px solid red;
+}
+
+.skills__title {
+  border: 1px solid blue;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 1.25em;
+}
+
+.skills__line {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 9.56em;
+}
+
+.skills__box {
+  width: 11em;
+  height: 10.75em;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFF;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px; 
+  box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+  border: none;
+}
+
+.skills__box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 11em;
+  height: 10.75em;
+}
+
+.skills__img {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+}
+
+.skills__name {
+  padding: 1em ;
+}
 /*Sessão Hobbies*/
 
-section.hobbies {}
+section.hobbies {
+  margin: 0 9.56em;
+  border: 1px solid red;
+}
+
+.hobbies__title {
+  border: 1px solid blue;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 1.25em;
+}
+
+.hobbies__line {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 9.56em;
+}
+
+.hobbies__box {
+  width: 11em;
+  height: 10.75em;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFF;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px; 
+  box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+  border: none;
+}
+
+.hobbies__box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 11em;
+  height: 10.75em;
+}
+
+.hobbies__img {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+  border: 1px solid red;
+}
+
+.hobbies__name {
+  padding: 1em ;
+}
 
 /* Experiência Acadêmica*/
 
