@@ -14,6 +14,7 @@ coloque nas sessões indicadas*/
   --cor-de-fundo: #F5F5F5;
   --cor-de-link: #000;
   --cor-fundo-azul: #EAF2FD;
+  --cor-titulo: #464646;
 }
 
 body {
@@ -143,7 +144,7 @@ section.skills {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
-  padding: 1.25em;
+  color: var(--cor-titulo);
 }
 
 .skills__line {
@@ -194,15 +195,15 @@ section.skills {
 /*Sessão Hobbies*/
 
 section.hobbies {
-  margin: 3em 9.56em;
+  margin: 4em 9.56em;
 }
 
 .hobbies__title {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
-  padding: 1.25em;
   line-height: 2em;
+  color: var(--cor-titulo);
 }
 
 .hobbies__line {
@@ -254,17 +255,14 @@ section.hobbies {
 /* Experiência Acadêmica*/
 
 section.academic {
-  margin: 3em 0;
-  padding: 3.87em 10.25em;
+  padding: 1em 10.25em 7em 10.25em;
   background-color: var(--cor-fundo-azul);
-  border: 1px solid yellow;
 }
 
 .academic__title {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
-  padding: 1.25em 0;
   line-height: 2em;
   color: #464646;
 }
@@ -272,19 +270,37 @@ section.academic {
 .academic__courses {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .academic__courses__box {
-  border: 1px solid yellow;
   width: 23em;
   height: 17.87em;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .academic__courses__list {
-  border: 1px dotted green;
   padding: 0;
   margin: 0;
+}
+
+.academic__courses__list h4 {
+  padding: 10px 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.37em;
+  line-height: 1.62em;
+  color: var(--cor-titulo);
+}
+
+.academic__courses__list p {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.18em;
+  color: var(--cor-titulo);
 }
 .academic__courses__item__img {
   padding: 0;
@@ -293,12 +309,17 @@ section.academic {
   justify-content: center;
   align-items: center;
   background-color: #FFFF;
+  width: 23em;
+  height: 16.75em;
+  border-radius: 15px;
 }
 
 .academic__courses__item__img img {
   width: 13em;
   height: 13em;
 }
+
+
 
 /* experiência*/
 
