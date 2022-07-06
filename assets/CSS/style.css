@@ -15,6 +15,7 @@ coloque nas sessões indicadas*/
   --cor-de-link: #000;
   --cor-fundo-azul: #EAF2FD;
   --cor-titulo: #464646;
+  --cor-marca: #4169E1
 }
 
 body {
@@ -69,7 +70,7 @@ section header {
 .menu__title {
   font-family: Yellowtail;
   font-size: 1.5em;
-  color: royalblue;
+  color: var(--cor-marca);
   padding: .5em;
   font-weight: 700;
 }
@@ -337,7 +338,6 @@ section.experience {
 
 .experience__box {
   display: flex;
-  border: 1px solid red;
 }
 
 .experience__info {
@@ -364,11 +364,59 @@ section.experience {
   line-height: 1.18em;
 }
 
-
-
 .experience__img {
   width: 47em;
   height: 25.37em;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+  margin-bottom: 3em;
+}
+
+.experience__button--repo {
+  padding: 1em;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--cor-marca);
+  color: var(--cor-marca);
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.18em;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.experience__button--demo {
+  padding: 1em;
+  background-color: var(--cor-marca);
+  border-radius: 5px;
+  border: 2px solid var(--cor-marca);
+  color: #FFF;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.18em;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.experience .experience__box:nth-child(3) {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+}
+
+.experience__box:nth-child(3) .experience__info {
+  text-align: center;
+}
+
+.experience .experience__box:nth-child(4) {
+  border: 1px solid red;
+  display: flex;
+  margin: 0 auto;
+}
+
+.experience__box:nth-child(4) .experience__info {
+  border: 1px solid yellow;
+  text-align: center;
 }
 
 /*Contato*/
