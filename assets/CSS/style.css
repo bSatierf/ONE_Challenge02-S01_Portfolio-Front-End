@@ -323,7 +323,53 @@ section.academic {
 
 /* experiência*/
 
-section.experience {}
+section.experience {
+  margin: 0 9.56em;
+}
+
+.experience__section__title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em;
+  color: #464646;
+}
+
+.experience__box {
+  display: flex;
+  border: 1px solid red;
+}
+
+.experience__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.experience__title {
+  font-weight: 700;
+  font-size: 1.37em;
+  line-height: 1.62em;
+  color: var(--cor-titulo);
+  margin: 0;
+}
+
+.experience__text {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.18em;
+}
+
+
+
+.experience__img {
+  width: 47em;
+  height: 25.37em;
+}
 
 /*Contato*/
 
