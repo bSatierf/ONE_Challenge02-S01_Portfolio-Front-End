@@ -58,7 +58,6 @@ section.menu {
   margin: 0 9.56em;
   padding: .93em 0;
   height: 10vh;
-  border: 1px solid yellow;
 }
 
 section header {
@@ -79,11 +78,9 @@ section header {
 .menu__list {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   font-size: 16px;
   font-weight: 500;
   width: 46.87em;
-
 }
 
 
@@ -140,11 +137,9 @@ section.about {
 
 section.skills {
   margin: 0 9.56em;
-  border: 1px solid red;
 }
 
 .skills__title {
-  border: 1px solid blue;
   text-align: center;
   font-size: 2em;
   font-weight: 700;
@@ -154,7 +149,8 @@ section.skills {
 .skills__line {
   display: flex;
   justify-content: space-around;
-  margin: 0 9.56em;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .skills__box {
@@ -191,20 +187,22 @@ section.skills {
 
 .skills__name {
   padding: 1em ;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.18em;
 }
 /*Sessão Hobbies*/
 
 section.hobbies {
-  margin: 0 9.56em;
-  border: 1px solid red;
+  margin: 3em 9.56em;
 }
 
 .hobbies__title {
-  border: 1px solid blue;
   text-align: center;
   font-size: 2em;
   font-weight: 700;
   padding: 1.25em;
+  line-height: 2em;
 }
 
 .hobbies__line {
@@ -243,16 +241,64 @@ section.hobbies {
   margin: 0;
   padding: 0;
   padding-left: 1em;
-  border: 1px solid red;
+  
 }
 
 .hobbies__name {
-  padding: 1em ;
+  padding: 1em;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.18em;
 }
 
 /* Experiência Acadêmica*/
 
-section.academic {}
+section.academic {
+  margin: 3em 0;
+  padding: 3.87em 10.25em;
+  background-color: var(--cor-fundo-azul);
+  border: 1px solid yellow;
+}
+
+.academic__title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 1.25em 0;
+  line-height: 2em;
+  color: #464646;
+}
+
+.academic__courses {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.academic__courses__box {
+  border: 1px solid yellow;
+  width: 23em;
+  height: 17.87em;
+}
+
+.academic__courses__list {
+  border: 1px dotted green;
+  padding: 0;
+  margin: 0;
+}
+.academic__courses__item__img {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFF;
+}
+
+.academic__courses__item__img img {
+  width: 13em;
+  height: 13em;
+}
 
 /* experiência*/
 
