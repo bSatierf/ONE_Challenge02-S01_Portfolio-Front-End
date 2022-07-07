@@ -411,7 +411,6 @@ section.experience {
 .experience .experience__box:nth-child(4) {
   display: flex;
   margin: 0 auto;
-  height: ;
 }
 
 .experience__box:nth-child(4) .experience__info {
@@ -419,20 +418,154 @@ section.experience {
 }
 
 .experience .experience__box:nth-child(5) {
-  border: 1px solid red;
   display: flex;
   margin: 0 auto;
-  height: ;
 }
 
 .experience__box:nth-child(5) .experience__info {
-  border: 1px solid yellow;
   text-align: center;
 }
 
 /*Contato*/
 
-section.formcontato {}
+section.formcontato {
+  padding: 2em 10.25em 7em 10.25em;
+  background-color: var(--cor-fundo-azul);
+}
+
+.formcontato__contacto {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+}
+
+.formcontato__text {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  color: var(--cor-titulo);
+}
+
+.formcontato__title {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2.37em;
+}
+
+.formcontato__subtext {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.18em;
+}
+
+.formcontato__form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+
+.div__floating {
+  position: relative;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus ~ .form__input--floating-label--assunto,
+input:focus ~ .form__input--floating-label--nome,
+input:focus ~ .form__input--floating-label--email {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+input:not(:focus) ~ 
+.form__input--floating-label--assunto,
+input:not(:focus) ~ 
+.form__input--floating-label--nome,
+input:not(:focus) ~ 
+.form__input--floating-label--email { 
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.formcontato__input {
+  padding: 1em 0;
+  border: none;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+.form__input--floating-label--nome,
+.form__input--floating-label--assunto,
+.form__input--floating-label--email {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 17px;
+  transition: 0.2s ease all;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid var(--cor-marca);
+}
+
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transform: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+  padding-left: 5px;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+.formcontato__botao {
+  width: 15em;
+  padding: 1em;
+  background-color: var(--cor-marca);
+  border-radius: 10px;
+  border: 2px solid var(--cor-marca);
+  color: #FFF;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.18em;
+  cursor: pointer;
+  margin: 0 5px;
+  margin-top: 2em;
+}
+
 
 /*footeer*/
 
