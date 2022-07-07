@@ -256,19 +256,19 @@
             rápido possível. </h3>
           <form class="formcontato__form">
             <div class="div__floating">
-              <input class="formcontato__input" type="text" id="nome" placeholder="">
-              <span class="form__input--floating-label">Nome</span>
+              <input class="formcontato__input" type="text" id="nome" placeholder="Balbino Freitas Neto" required >
+              <label for="nome" class="form__input--floating-label--nome" >Nome</label>
             </div>
             <div class="div__floating">
-              <input class="formcontato__input" type="email" id="email" placeholder="">
-              <span class="form__input--floating-label">Email</span>
+              <input class="formcontato__input" type="email" id="email" placeholder="seuemail@example.com" required >
+              <label for="email" class="form__input--floating-label--email" >Email</label>
             </div>
             <div class="div__floating">
-              <input class="formcontato__input" type="text" id="assunto" placeholder="">
-              <span class="form__input--floating-label"> Assunto</span>
+              <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required >
+              <label for="assunto" class="form__input--floating-label--assunto" >Assunto</label>
             </div>
             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-            placeholder="Sua mensagem"></textarea>
+            placeholder="Sua mensagem" required ></textarea>
               
             <button class="formcontato__botao">Enviar mensagem</button>
           </form>
