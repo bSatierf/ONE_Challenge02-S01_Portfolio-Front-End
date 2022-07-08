@@ -1,6 +1,4 @@
 /*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap');
 
@@ -569,7 +567,24 @@ input:focus + label {
 
 /*footeer*/
 
-section.footer {}
+section.footer {
+  margin: 0 9.56em;
+}
+
+.footer__rodape {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.10em;
+}
+
+.footer__rodape p {
+  padding: 0;
+}
+
+.footer__rodape a {
+  font-style: italic;
+}
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
