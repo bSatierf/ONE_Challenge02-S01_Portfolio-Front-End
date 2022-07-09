@@ -254,32 +254,42 @@
           <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
           <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais
             rápido possível. </h3>
-          <form class="formcontato__form">
+          <form class="formcontato__form" id="form">
             <div class="div__floating">
-              <input class="formcontato__input" type="text" id="nome" placeholder="Balbino Freitas Neto" required >
+              <input class="formcontato__input" type="text" id="nome" placeholder="Balbino Freitas Neto" >
               <label for="nome" class="form__input--floating-label--nome" >Nome</label>
-              <span class="iconify exclamation" data-icon="bi:exclamation-circle-fill" style="color: red;" data-width="22" data-height="22"></span>
-              <span class="iconify check" data-icon="bi:check-circle-fill" style="color: #3c0;" data-width="22" data-height="22"></span>
+              <img class="iconify exclamation" src="./assets/image/exclamation-circle-fill.svg" alt="">
+              <img src="./assets/image/check-circle-fill.svg" alt="" class="iconify check">
+              <!-- <span class="iconify exclamation" data-icon="bi:exclamation-circle-fill" style="color: red;" data-width="22" data-height="22"></span> -->
+              <!-- <span class="iconify check" data-icon="bi:check-circle-fill" style="color: #3c0;" data-width="22" data-height="22"></span> -->
               <small>Mensagem de erro</small>
             </div>
             <div class="div__floating">
-              <input class="formcontato__input" type="email" id="email" placeholder="seuemail@example.com" required >
+              <input class="formcontato__input" type="email" id="email" placeholder="seuemail@example.com">
               <label for="email" class="form__input--floating-label--email" >Email</label>
-              <span class="iconify exclamation" data-icon="bi:exclamation-circle-fill" style="color: red;" data-width="22" data-height="22"></span>
-              <span class="iconify check " data-icon="bi:check-circle-fill" style="color: #3c0;" data-width="22" data-height="22"></span>
+              <img class="iconify exclamation" src="./assets/image/exclamation-circle-fill.svg" alt="">
+              <img src="./assets/image/check-circle-fill.svg" alt="" class="iconify check">
+              <!-- <span class="iconify exclamation" data-icon="bi:exclamation-circle-fill" style="color: red;" data-width="22" data-height="22"></span> -->
+              <!-- <span class="iconify check " data-icon="bi:check-circle-fill" style="color: #3c0;" data-width="22" data-height="22"></span> -->
               <small>Mensagem de erro</small>
             </div>
             <div class="div__floating">
-              <input class="formcontato__input " type="text" id="assunto" placeholder="Assunto" required >
+              <input class="formcontato__input " type="text" id="assunto" placeholder="Assunto">
               <label for="assunto" class="form__input--floating-label--assunto" >Assunto</label>
-              <span class="iconify exclamation" data-icon="bi:exclamation-circle-fill" style="color: red;" data-width="22" data-height="22"></span>
-              <span class="iconify check" data-icon="bi:check-circle-fill" style="color: #3c0;" data-width="22" data-height="22"></span>
+              <img class="iconify exclamation" src="./assets/image/exclamation-circle-fill.svg" alt="">
+              <img src="./assets/image/check-circle-fill.svg" alt="" class="iconify check">
+              <!-- <span class="iconify exclamation" id="exclamation" data-icon="bi:exclamation-circle-fill" style="color: red;" data-width="22" data-height="22"></span> -->
+              <!-- <span class="iconify check" data-icon="bi:check-circle-fill" style="color: #3c0;" data-width="22" data-height="22"></span> -->
               <small>Mensagem de erro</small>
             </div>
-            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-            placeholder="Sua mensagem" required ></textarea>
-              
-            <button class="formcontato__botao">Enviar mensagem</button>
+            <div class="div__floating">
+              <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
+              placeholder="Sua mensagem"></textarea>
+              <label for="assunto" class="form__input--floating-label--suaMensagem" >Sua mensagem</label>
+              <img class="iconify exclamation" src="./assets/image/exclamation-circle-fill.svg" alt="">
+              <img src="./assets/image/check-circle-fill.svg" alt="" class="iconify check">
+            </div>
+            <button class="formcontato__botao" id="btn" type="submit">Enviar mensagem</button>
           </form>
         </div>
       </div>
@@ -294,7 +304,7 @@
     </section>
   </div>
   <!-- Script Linkado do seu documento de JavaScript -->
-  <script src="validate.js"></script>
+  <script src="./assets/JS/validate.js"></script>
 </body>
 
 </html>
