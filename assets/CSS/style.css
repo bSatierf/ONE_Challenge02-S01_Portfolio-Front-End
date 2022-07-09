@@ -490,6 +490,14 @@ input:focus ~ .form__input--floating-label--email {
   opacity: 1;
 }
 
+textarea:focus ~ .form__input--floating-label--suaMensagem {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  font-size: 11px;
+  opacity: 1;
+}
+
 input:not(:focus) ~ 
 .form__input--floating-label--assunto,
 input:not(:focus) ~ 
@@ -503,7 +511,17 @@ input:not(:focus) ~
   opacity: 1;
 }
 
-.formcontato__input {
+textarea:not(:focus) ~
+.form__input--floating-label--suaMensagem {
+  top: 15px;
+  left: 2px;
+  bottom: 2px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.formcontato__input,
+.formcontato__textarea {
   padding: 1em 0;
   border: none;
   line-height: 1em;
@@ -512,7 +530,8 @@ input:not(:focus) ~
 
 .form__input--floating-label--nome,
 .form__input--floating-label--assunto,
-.form__input--floating-label--email {
+.form__input--floating-label--email,
+.form__input--floating-label--suaMensagem {
   position: absolute;
   pointer-events: none;
   left: 10px;
@@ -520,12 +539,14 @@ input:not(:focus) ~
   transition: 0.2s ease all;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: 0;
   border-bottom: 1px solid var(--cor-marca);
 }
 
-input:placeholder-shown + label {
+input:placeholder-shown + label,
+textarea:placeholder-shown + label {
   cursor: text;
   max-width: 66.66%;
   white-space: nowrap;
@@ -535,22 +556,27 @@ input:placeholder-shown + label {
   transform: translate(0, 2.125rem) scale(1.5);
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   opacity: 0;
   transform: inherit;
 }
 
-input:focus::-webkit-input-placeholder {
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
   opacity: 1;
   padding-left: 5px;
 }
 
-textarea::-webkit-input-placeholder {
+/* textarea::-webkit-input-placeholder {
   opacity: 1;
-}
+} */
 
 input:not(:placeholder-shown) + label,
-input:focus + label {
+input:focus + label,
+textarea:not(:placeholder-shown) + label,
+textarea:focus + label {
   transform: translate(0, 0) scale(1);
   cursor: pointer;
 }
@@ -593,11 +619,13 @@ small.error {
   visibility: visible;
 }
 
-input.success {
+input.success,
+textarea.success {
   border: 2px solid green;
 }
 
-input.error {
+input.error,
+textarea.error {
   border: 2px solid red;
 }
 
