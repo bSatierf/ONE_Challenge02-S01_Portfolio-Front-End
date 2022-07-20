@@ -70,7 +70,6 @@ section.title {
 }
 
 .title__div {
-  width: 100vw;
   margin: 2em 0 1em 0;
 }
 
@@ -82,7 +81,7 @@ section.title {
 .title__container {
   display: flex;
   flex-direction: column;
-  width: auto;
+  /* width: auto; */
 }
 
 div.title__container h2 {
@@ -199,9 +198,8 @@ section.academic {
 }
 
 section.experience {
-  width: 100vw;
-  margin: 0em 0 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 1rem;
 }
 
 .experience__section__title {
@@ -213,15 +211,13 @@ section.experience {
 .experience__box,
 .experience .experience__box:nth-child(3), 
 .experience .experience__box:nth-child(4) {
-  width: 100vw;
-  box-sizing: border-box;
-  padding: 1rem;
+  /* box-sizing: border-box; */
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
 }
 
 .experience__img {
-  /* width: 44rem; */
   width: auto;
   height: 20rem;
   margin: 0;
@@ -292,5 +288,14 @@ section.formcontato {
   padding: .75rem 1rem;
 }
 
+section.footer {
+  margin: 0;
+  padding: 1rem;
+}
 
+.footer__rodape {
+  display: flex;
+  flex-direction: column;
+
+}
 
