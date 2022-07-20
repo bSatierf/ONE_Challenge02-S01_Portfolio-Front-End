@@ -86,7 +86,7 @@ section header {
   justify-content: space-between;
   font-size: 16px;
   font-weight: 500;
-  width: 46.87em;
+  width: 46.87rem;
 }
 
 
@@ -674,7 +674,11 @@ body::-webkit-scrollbar-thumb {
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
+
+
+@media (max-width: 768px) {
+
+  /* styles_768.css */
 
   /* Menu */
 
