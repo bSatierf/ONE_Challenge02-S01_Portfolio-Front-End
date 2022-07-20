@@ -1,0 +1,296 @@
+/*CSS Reset / Normalize*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@200&family=Neonderthaw&family=Satisfy&family=Tourney:ital,wght@1,100&family=Vibur&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Sacramento&family=Yellowtail&display=swap');
+
+:root {
+  /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #F5F5F5;
+  --cor-de-link: #000;
+  --cor-fundo-azul: #EAF2FD;
+  --cor-titulo: #464646;
+  --cor-marca: #4169E1;
+  --cor-scrollbar-bg: #CFD8DC;
+  --cor-thumb-scrollbar-bg: #90A4AE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: 'Raleway';
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
+}
+
+section.menu {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.menu__title {
+  margin: 0rem;
+  padding: 1rem;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  width: 46rem;
+}
+
+section.title {
+  display: flex;
+  margin: 0;
+  padding: 1rem;
+}
+
+.title__div {
+  width: 100vw;
+  margin: 2em 0 1em 0;
+}
+
+
+.title__profile {
+  height: 146px;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+div.title__container h2 {
+  font-size: 1.37rem;
+  line-height: 1.26em;
+  padding: 0 20px 0 0;
+  margin: 0;
+}
+
+.title__subsection {
+  width: 30em;
+  font-size: 1rem;
+  line-height: 1.18em;
+  font-weight: 400;
+  padding: 0 1.25em 1em 0;
+  margin-bottom: 0;
+}
+
+.title__network {
+  width: 27.25em;
+  margin: 0;
+}
+
+section.about {
+  padding: 1em;
+}
+
+section.skills {
+  margin: 0;
+  padding: 1rem;
+}
+
+.skills__title {
+  margin: 1em 0;
+  font-size: 1.37em;
+  line-height: 1.62em;
+}
+
+.skills__line {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* box-sizing: border-box; */
+}
+
+.skills__box {
+  width: 14em;
+  height: 7.37em;
+  background-color: #FFFF;
+  border-radius: 15px; 
+  margin: 1em 0;
+}
+
+section.hobbies {
+  margin: 0;
+  padding: 1rem;
+}
+
+.hobbies__title {
+  margin: 1em 0;
+  font-size: 1.37em;
+  line-height: 1.62em;
+}
+
+.hobbies__line {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.hobbies__box {
+  width: 14rem;
+  height: 7.37rem;
+  background-color: #FFFF;
+  border-radius: 15px; 
+  margin: 1em 0;
+}
+
+section.academic {
+  margin: 0;
+  padding: 1rem;
+}
+
+.academic__title {
+  font-size: 1.37em;
+  line-height: 1.62em;
+}
+
+.academic__courses {
+  box-sizing: border-box;
+}
+
+.academic__courses__item__img {
+  width: 14rem;
+  height: 10.56rem;
+}
+
+.academic__courses__item__img img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.academic__courses__list h4 {
+  font-size: 1em;
+  line-height: 1.18em;
+
+}
+
+.academic__courses__list p {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+section.experience {
+  width: 100vw;
+  margin: 0em 0 0 0;
+  padding: 0;
+}
+
+.experience__section__title {
+  margin: 1rem;
+  font-size: 1.37em;
+  line-height: 1.62em;
+}
+
+.experience__box,
+.experience .experience__box:nth-child(3), 
+.experience .experience__box:nth-child(4) {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__img {
+  /* width: 44rem; */
+  width: auto;
+  height: 20rem;
+  margin: 0;
+}
+
+.experience__info {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding-top: .8rem;
+}
+
+.experience__title {
+  font-size: 1em;
+  line-height: 1.18rem;
+}
+
+.experience__text {
+  font-size: .87em;
+  line-height: 1rem;
+}
+
+.experience__button--repo {
+  padding: .75rem 1rem;
+  margin: 0;
+}
+
+.experience__button--demo {
+  padding: .75rem 1rem;
+  margin: 0 0 0 .6rem;
+  
+}
+
+section.formcontato {
+  padding: 1rem;
+  margin: 0;
+}
+
+.formcontato__contacto {
+  /* padding: 1rem; */
+  display: block;
+}
+
+.formcontato__text {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.formcontato__title {
+  font-size: 1.37em;
+  line-height: 1.62rem;
+}
+
+.formcontato__subtext {
+  font-size: 1em;
+  line-height: 1.18rem;
+}
+
+.formcontato--esquerda {
+  display: none;
+}
+
+.formcontato__botao {
+  width: 9.43rem;
+  font-size: .87em;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: .75rem 1rem;
+}
+
+
+
