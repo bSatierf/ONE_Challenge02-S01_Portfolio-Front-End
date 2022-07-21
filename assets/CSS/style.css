@@ -58,12 +58,24 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu*/
 
 section.menu {
+  padding: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: rgba(234, 242, 253, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+}
+
+.menu__div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 9.56em;
   padding: .93em 0;
   height: 10vh;
+  
 }
 
 section header {
@@ -79,8 +91,6 @@ section header {
   font-weight: 700;
 }
 
-
-
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -94,7 +104,7 @@ section header {
 
 section.title {
   display: flex;
-  margin: 2em 9.56em;
+  margin: 0 9.56em;
 }
 
 div.title__container h2 {
@@ -108,6 +118,8 @@ div.title__div {
   align-content: center;
   justify-content: space-around;
   flex-direction: row-reverse;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
 }
 
 .title__subsection {

@@ -42,7 +42,7 @@ a {
   color: var(--cor-de-link);
 }
 
-section.menu {
+.menu__div {
   margin: 0;
   padding: 1rem;
   display: flex;

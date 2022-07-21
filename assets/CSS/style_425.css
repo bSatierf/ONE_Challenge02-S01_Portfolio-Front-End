@@ -38,11 +38,24 @@ h3 {
   font-size: 1.37em;
 }
 
+.menu__div {
+  padding-top: 0;
+}
+
 .menu__list {
   width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.menu__list__item {
+  padding: 0 .2rem;
+}
+
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(4) {
+  padding: 0;
 }
 
 .menu__list__item:nth-child(5),
@@ -53,6 +66,8 @@ h3 {
 div.title__div {
   width: 24.31rem;
   flex-direction: column;
+  margin-top: 9rem;
+  margin-bottom: 2rem;
 }
 
 .title__profile {
