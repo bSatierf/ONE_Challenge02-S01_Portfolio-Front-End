@@ -1,0 +1,131 @@
+:root {
+  /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #F5F5F5;
+  --cor-de-link: #000;
+  --cor-fundo-azul: #EAF2FD;
+  --cor-titulo: #464646;
+  --cor-marca: #4169E1;
+  --cor-scrollbar-bg: #CFD8DC;
+  --cor-thumb-scrollbar-bg: #90A4AE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: 'Raleway';
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
+}
+
+h3 {
+  font-size: 1.37em;
+}
+
+.all {
+  border: 1px solid blue;
+}
+
+section.menu {
+  border: 1px solid red;
+}
+
+.menu__list {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu__list__item:nth-child(5),
+.menu__list__item:nth-child(6) {
+  border: 1px solid green;
+  padding-top: .8rem;
+}
+
+section.title {
+  border: 1px solid var(--cor-marca);
+  
+
+}
+
+div.title__div {
+  width: 24.31rem;
+  flex-direction: column;
+  border: 1px solid green;
+}
+
+.title__profile {
+  height: 98px;
+  width: 98px;
+}
+
+div.title__container h2 + h3 {
+  
+  word-wrap: break-word;
+}
+.title__bio {
+  border: 1px solid orange;
+  display: flex;
+  
+}
+
+.title__subsection {
+  border: 1px solid yellow;
+  width: auto;
+  font-size: .87em;
+}
+
+.title__network {
+  width: auto;
+}
+
+.skills__box {
+  width: 9.75rem;
+  height: 7.37rem;
+}
+
+.skills__name {
+  padding: .5rem;
+}
+
+.hobbies__box {
+  width: 9.75rem;
+  height: 7.37rem;
+}
+
+.hobbies__name {
+  padding: .5rem;
+}
+
+.academic__courses {
+  flex-direction: column;
+}
+
+.academic__courses__item__img {
+  width: 18.5rem;
+}
+
+.experience__info {
+  padding-top: 1rem;
+}
+
+.formcontato__contacto {
+  padding-bottom: 2rem;
+}
