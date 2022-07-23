@@ -300,6 +300,7 @@ section.hobbies {
 section.academic {
   padding: 2em 10.25em 9em 10.25em;
   background-color: var(--cor-fundo-azul);
+  margin-top: 5em;
 }
 
 .academic__title {
@@ -687,6 +688,35 @@ textarea.error {
   border: 2px solid red;
 }
 
+
+/* botão voltar para o topo */
+
+.back-to-top {
+  background-color: var(--cor-marca);
+  border-radius: 65px;
+  bottom: 14px;
+  box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+  color: var(--cor-thumb-scrollbar-bg);
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 22px;
+  width: 40px;
+  z-index: 3;
+  display: none;
+}
+
+.back-to-top::after {
+  content: '▲';
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.back-to-top:hover {
+  box-shadow: 0 0 0 4px var(--cor-de-fundo), 0 0 0 5px var(--cor-marca);
+  transition: ease-in-out 400ms;
+}
 
 
 /*footeer*/
