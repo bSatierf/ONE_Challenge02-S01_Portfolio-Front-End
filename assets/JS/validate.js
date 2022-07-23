@@ -77,3 +77,22 @@ submitBtn.addEventListener('submit', (e) => {
   e.preventDefault();
   validaDados();
 });
+
+const btnTop = document.querySelector('.back-to-top');
+
+btnTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+function decidirScroll() {
+  if (window.scrollY === 0) {
+    btnTop.style.display = 'none';
+  } else {
+    btnTop.style.display = 'block';
+  }
+}
+
+window.addEventListener('scroll', decidirScroll);
