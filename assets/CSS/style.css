@@ -62,10 +62,11 @@ section.menu {
   position: fixed;
   right: 0;
   left: 0;
-  background: rgba(234, 242, 253, 0.24);
+  background: rgba(234, 242, 253, 0.29);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.9px);
-  -webkit-backdrop-filter: blur(5.9px);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  z-index: 1000;
 }
 
 .menu__div {
@@ -74,9 +75,10 @@ section.menu {
   align-items: center;
   margin: 0 9.56em;
   padding: .93em 0;
-  height: 10vh;
-  
+  height: 5vh;
 }
+
+
 
 section header {
   display: flex;
@@ -99,6 +101,28 @@ section header {
   width: 46.87rem;
 }
 
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--cor-marca);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer:fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
 
 /*Sessão Title*/
 
@@ -155,6 +179,7 @@ section.about {
 
 section.skills {
   margin: 0 9.56em;
+  padding-top: 3em;
 }
 
 .skills__title {
@@ -212,7 +237,8 @@ section.skills {
 /*Sessão Hobbies*/
 
 section.hobbies {
-  margin: 4em 9.56em;
+  margin: 0 9.56em;
+  padding-top: 2em;
 }
 
 .hobbies__title {
@@ -272,7 +298,7 @@ section.hobbies {
 /* Experiência Acadêmica*/
 
 section.academic {
-  padding: 1em 10.25em 7em 10.25em;
+  padding: 2em 10.25em 9em 10.25em;
   background-color: var(--cor-fundo-azul);
 }
 
@@ -342,6 +368,7 @@ section.academic {
 
 section.experience {
   margin: 0 9.56em;
+  padding-top: 4em;
 }
 
 .experience__section__title {
@@ -350,6 +377,7 @@ section.experience {
   font-weight: 700;
   line-height: 2em;
   color: #464646;
+  margin-top: 0;
 }
 
 .experience__box {
@@ -399,6 +427,7 @@ section.experience {
   line-height: 1.18em;
   cursor: pointer;
   margin: 0 5px;
+  box-shadow: 0px 8px 5px -5px rgb(0 0 0 / 20%);
 }
 
 .experience__button--demo {
@@ -412,6 +441,16 @@ section.experience {
   line-height: 1.18em;
   cursor: pointer;
   margin: 0 5px;
+  box-shadow: 0px 8px 5px -5px rgb(0 0 0 / 20%);
+}
+
+.experience__button--repo:hover, .experience__button--demo:hover {
+  box-shadow: 0 0 0 4px var(--cor-de-fundo), 0 0 0 5px var(--cor-marca);
+  transition: ease-in-out 400ms;
+}
+
+.experience__button--demo.off {
+  cursor: not-allowed;
 }
 
 .experience .experience__box:nth-child(3) {
@@ -447,12 +486,13 @@ section.experience {
 section.formcontato {
   padding: 2em 10.25em 7em 10.25em;
   background-color: var(--cor-fundo-azul);
+  padding-top: 4em;
 }
 
 .formcontato__contacto {
   display: flex;
   justify-content: center;
-  padding: 3em 0;
+  padding: 4em 0;
 }
 
 .formcontato__text {
@@ -605,7 +645,13 @@ textarea:focus + label {
   line-height: 1.18em;
   cursor: pointer;
   margin: 0 5px;
-  margin-top: 2em;
+  margin-top: 2em; 
+  box-shadow: 0px 8px 5px -5px rgb(0 0 0 / 20%);
+}
+
+.formcontato__botao:hover {
+  box-shadow: 0 0 0 4px var(--cor-de-fundo), 0 0 0 5px var(--cor-marca);
+  transition: ease-in-out 300ms;
 }
 
 .div__floating .iconify {
